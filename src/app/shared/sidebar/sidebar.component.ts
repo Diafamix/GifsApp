@@ -13,4 +13,8 @@ export class SidebarComponent {
     return this.gifsService.historial;
     
   }
+
+  mostrarGifs(item: string) {
+    return this.gifsService.bucarGifs( item );
+  }
 }

@@ -4,8 +4,10 @@
     </h3>
     <div class="list-group list-reset">
         <a  *ngFor="let item of historial;"
+            (click)="mostrarGifs( item )"
             href="#"
-            class="list-group-item list-group-item-action">
+            class="list-group-item list-group-item-action"
+            >
           {{ item | titlecase }}
         </a>
     </div>
