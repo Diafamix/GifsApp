@@ -14,7 +14,7 @@ export class SidebarComponent {
     
   }
 
-  mostrarGifs(item: string) {
-    return this.gifsService.bucarGifs( item );
+  buscar( termino: string ) {
+    this.gifsService.bucarGifs( termino );
   }
 }
